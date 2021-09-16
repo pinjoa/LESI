@@ -10,7 +10,7 @@ Comandos a utilizar numa janela de terminal do Git Bash
 
 ```
 git branch -M mainPinjoa
-git remote add origin https://github.com/pinjoa/partilhaDocumentos.git
+git remote add origin https://github.com/pinjoa/LESI.git
 ```
 
 ## Contribuir
