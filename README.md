@@ -1,4 +1,4 @@
-﻿# (LESI) Partilha de documentos
+﻿# (LESI) Espaço de partilha
 
 ## Descrição
 
