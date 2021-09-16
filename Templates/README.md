@@ -3,7 +3,7 @@
 
 ## Descrição
 
-Esta página inclui os projetos nas diversas linguagens de programação.
+Esta página inclui os projetos/templates nas diversas linguagens de programação.
 ```
     utilizo este local para centralizar todo o código que partilho com os meus colegas de curso
 ```
