@@ -17,10 +17,9 @@ Cenário criado para o teste:
 ![resultado dos testes efetuados](res/hash_known_algorithms_bateria_testes_publicar.png)
 [Resultado em formato PDF](hash_known_algorithms_bateria_testes_publicar.pdf)
 
-```
-este trabalho de análise foi feito utilizando como ponto inicial de trabalho a informação disponível nesta 
-[página:](https://www.partow.net/programming/hashfunctions/#StringHashing)
-```
+
+- este trabalho de análise foi feito utilizando como ponto inicial de trabalho a informação disponível nesta [página:](https://www.partow.net/programming/hashfunctions/#StringHashing)
+
 
 
 ## Licença
