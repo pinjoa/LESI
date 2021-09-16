@@ -5,8 +5,8 @@
 É um exercício feito com o objetivo de testar diversas implementações de algoritmos conhecidas.
 
 ```
-    nesta pasta está apenas o código base utilizado e um módulo para testar o funcionamento da função de hash...
-	foi criado um makefile (o teste inicial foi feito em ambiente Windows e será compatível com ambiente Linux)
+nesta pasta está apenas o código base utilizado e um módulo para testar o funcionamento da função de hash...
+foi criado um makefile (o teste inicial foi feito em ambiente Windows e será compatível com ambiente Linux)
 ```
 
 Cenário criado para o teste:
@@ -18,8 +18,8 @@ Cenário criado para o teste:
 [Resultado em formato PDF](hash_known_algorithms_bateria_testes_publicar.pdf)
 
 ```
-    este trabalho de análise foi feito utilizando como ponto inicial de trabalho a informação disponível nesta página
-	[https://www.partow.net/programming/hashfunctions/#StringHashing](https://www.partow.net/programming/hashfunctions/#StringHashing)
+este trabalho de análise foi feito utilizando como ponto inicial de trabalho a informação disponível nesta 
+página: https://www.partow.net/programming/hashfunctions/#StringHashing
 ```
 
 
