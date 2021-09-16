@@ -1,17 +1,9 @@
-﻿# Partilha de documentos
+﻿# (LESI) Partilha de documentos
 
 ## Descrição
 
-É um espaço de partilha de informações úteis para quem procura mais conhecimentos.
+É um espaço de partilha de informações/conteúdo com os meus colegas e também poderão ser úteis para quem procura outras ideias/conceitos/experiências.
 
-## Como utilizar
-
-Comandos a utilizar numa janela de terminal do Git Bash
-
-```
-git branch -M mainPinjoa
-git remote add origin https://github.com/pinjoa/LESI.git
-```
 
 ## Contribuir
 
