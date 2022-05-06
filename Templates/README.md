@@ -1,7 +1,7 @@
 ﻿# alguns projetos
 
 
-## Descrição
+## Descrição | *Description*
 
 Esta página inclui os projetos/templates nas diversas linguagens de programação.
 ```
@@ -20,8 +20,9 @@ Tens algum desafio a colocar?
 Todas as sugestões para melhorar são aceites.
 
 
-## Licença
-
-Copyright (c) 2021, João Carlos Pinto 
-
-BSD-3-Clause License
+## Licença | *License*
+ 
+Copyright (c) 2019-2022, João Carlos Pinto  
+ 
+[BSD-3-Clause License](../LICENSE)
+ 
