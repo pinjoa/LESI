@@ -1,8 +1,8 @@
 ﻿# C# - CSharp
-
-
+ 
+ 
 ## IDE's
-
+ 
 Editores utilizados
 ```
 lista com alguns editores que utilizo...
@@ -21,10 +21,11 @@ lista com alguns editores que utilizo...
 Tens algum desafio a colocar?
 
 Todas as sugestões para melhorar são aceites.
-
-
+ 
+ 
 ## Licença
-
-Copyright (c) 2021, João Carlos Pinto 
-
-BSD-3-Clause License
+ 
+Copyright (c) 2019-2022, João Carlos Pinto  
+ 
+BSD-3-Clause License 
+ 
