@@ -1,0 +1,68 @@
+
+\chapter{Capitulo 3}
+
+\section{Sub-capitulo 1}
+Texto do sub-capitulo 1 que inclui um pouco de código...
+
+\subsection{Lista dos carateres a ignorar}
+\begin{Verbatim}
+	t_ignore = " \t\n"
+\end{Verbatim}
+\hfill \break
+
+\section{Sub-capitulo 2}
+Texto do sub-capitulo 2
+
+\subsection{Listagem de programa}
+\begin{lstlisting}[language={c},
+caption={Código do programa: \textbf{apaga}.},
+label=lst:p1e]
+/**
+* programa apaga.c
+* @author #20808 Joao Carlos Pinto
+*/
+#include <stdio.h>
+#include <unistd.h>
+#include <errno.h>
+#include <string.h>
+#include "mytools.h"
+
+int main(int argc, char *argv[]) {
+	char buffer[MAXBUFFERSIZE];
+	if (argc < 2) {
+		buffer[0] = '\0';
+		sprintf(buffer, "Falta: ficheiro\n Deve "+
+		"utilizar-se desta forma:\n%s ficheiro(s)\n", 
+		argv[0]);
+		escrevErro(buffer);
+		return 1;
+	}
+	int resultado, bkErrno;
+	for(int i=1; i<argc; i++){
+		if ((resultado = unlink(argv[i])) == -1) {
+			buffer[0] = '\0';
+			bkErrno = errno;
+			sprintf(buffer, "erro (%d, %s) ao apagar o "+
+			"ficheiro: %s\n", bkErrno, strerror(bkErrno), 
+			argv[i]);
+			escrevErro(buffer);
+			return 1;
+		}
+		if (resultado == 0) {
+			buffer[0] = '\0';
+			sprintf(buffer, "o ficheiro \"%s\" foi apagado!\n", 
+			argv[i]);
+			escrever(buffer);
+		} else {
+			buffer[0] = '\0';
+			bkErrno = errno;
+			sprintf(buffer, "resultado (%d, %s) inesperado ao "+
+			"apagar o ficheiro \"%s\"!\n", bkErrno, 
+			strerror(bkErrno), argv[i]);
+			escrevErro(buffer);
+			return 1;
+		}
+	}
+	return 0;
+}
+\end{lstlisting}
