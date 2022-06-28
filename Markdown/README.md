@@ -1,6 +1,6 @@
 ﻿# Mardown?
 
-![Markdown](https://commons.wikimedia.org/wiki/File:Markdown-mark.svg#/media/Ficheiro:Markdown-mark.svg "Markdown")
+![Markdown](Markdown-mark.svg "Markdown")
 
 ## Descrição
 
