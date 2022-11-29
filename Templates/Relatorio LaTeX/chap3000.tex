@@ -28,41 +28,41 @@ label=lst:p1e]
 #include "mytools.h"
 
 int main(int argc, char *argv[]) {
-	char buffer[MAXBUFFERSIZE];
-	if (argc < 2) {
-		buffer[0] = '\0';
-		sprintf(buffer, "Falta: ficheiro\n Deve "+
-		"utilizar-se desta forma:\n%s ficheiro(s)\n", 
-		argv[0]);
-		escrevErro(buffer);
-		return 1;
-	}
-	int resultado, bkErrno;
-	for(int i=1; i<argc; i++){
-		if ((resultado = unlink(argv[i])) == -1) {
-			buffer[0] = '\0';
-			bkErrno = errno;
-			sprintf(buffer, "erro (%d, %s) ao apagar o "+
-			"ficheiro: %s\n", bkErrno, strerror(bkErrno), 
-			argv[i]);
-			escrevErro(buffer);
-			return 1;
-		}
-		if (resultado == 0) {
-			buffer[0] = '\0';
-			sprintf(buffer, "o ficheiro \"%s\" foi apagado!\n", 
-			argv[i]);
-			escrever(buffer);
-		} else {
-			buffer[0] = '\0';
-			bkErrno = errno;
-			sprintf(buffer, "resultado (%d, %s) inesperado ao "+
-			"apagar o ficheiro \"%s\"!\n", bkErrno, 
-			strerror(bkErrno), argv[i]);
-			escrevErro(buffer);
-			return 1;
-		}
-	}
-	return 0;
+  char buffer[MAXBUFFERSIZE];
+  if (argc < 2) {
+    buffer[0] = '\0';
+    sprintf(buffer, "Falta: ficheiro\n Deve "+
+    "utilizar-se desta forma:\n%s ficheiro(s)\n", 
+    argv[0]);
+    escrevErro(buffer);
+    return 1;
+  }
+  int resultado, bkErrno;
+  for(int i=1; i<argc; i++){
+    if ((resultado = unlink(argv[i])) == -1) {
+      buffer[0] = '\0';
+      bkErrno = errno;
+      sprintf(buffer, "erro (%d, %s) ao apagar o "+
+      "ficheiro: %s\n", bkErrno, strerror(bkErrno), 
+      argv[i]);
+      escrevErro(buffer);
+      return 1;
+    }
+    if (resultado == 0) {
+      buffer[0] = '\0';
+      sprintf(buffer, "o ficheiro \"%s\" foi apagado!\n", 
+      argv[i]);
+      escrever(buffer);
+    } else {
+      buffer[0] = '\0';
+      bkErrno = errno;
+      sprintf(buffer, "resultado (%d, %s) inesperado ao "+
+      "apagar o ficheiro \"%s\"!\n", bkErrno, 
+      strerror(bkErrno), argv[i]);
+      escrevErro(buffer);
+      return 1;
+    }
+  }
+  return 0;
 }
 \end{lstlisting}
