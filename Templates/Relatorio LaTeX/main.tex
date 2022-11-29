@@ -1,6 +1,6 @@
 % ---
 % template desenvolvido inicialmente por (DC-LESI) Prof Alberto Simões
-% modificado/melhorado por João Carlos Pinto (#20808) LESI-PL 2021-22
+% modificado/melhorado por João Carlos Pinto (#20808) LESI-PL 2021-23
 % ---
 \documentclass[a4paper,12pt,twoside]{book}
 \usepackage{lesi/lesi}
@@ -14,7 +14,7 @@
 \date{\today}
 
 %% Caso tenham mais que um orientador, colocar \AND
-\orientador{Nome professor}
+\orientador{Alberto Simões}
 
 %% comentar estas três linhas para projectos
 % \empresa{Fuzzy Bit - Software Engineering}
@@ -61,13 +61,6 @@ This is the translation of the previous text. It should say the exact same thing
 \listoftables
 \addcontentsline{toc}{chapter}{Lista de Tabelas}
 
-\mainmatter
-
-\input{chap1000}
-\input{chap2000}
-\input{chap3000}
-\input{chap4000}
-
 % comentar se nao se quiser lista de listagens
 \lstlistoflistings
 \addcontentsline{toc}{chapter}{Lista de Código}
@@ -77,6 +70,13 @@ This is the translation of the previous text. It should say the exact same thing
 
 % Commentar proximas duas linhas se nao for para usar glossarios
 \printglossary[title={Indice de Termos},toctitle={Indice de Termos}]
+
+\mainmatter
+
+\input{chap1000}
+\input{chap2000}
+\input{chap3000}
+\input{chap4000}
 
 % comentar se não for para usar bibliografia
 \bibliography{biblio}
